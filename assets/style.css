@@ -1,5 +1,29 @@
+*{
+    font-family: helvetica;
+}
 h1{
     font-family: "Roboto Mono";
+}
+h3{
+    font-size: 36px;
+    line-height: 1.35;
+}
+.subheading{
+    font-size: 22px;
+    
+}
+.affix {
+    min-height: 100vh;
+    width: 100%
+}
+
+.affix.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.affix.set {
+    position: absolute;
 }
 #navbar{
 	height: 60px;
@@ -16,7 +40,6 @@ h1{
     color:black;
 }
 #navbar .nav-link{
-    
     width:20%;
 	float:right;
     text-align: center;
@@ -33,12 +56,12 @@ body{
 #top-content{
     width: 85%;
     display:flex;
+    word-wrap: break-word;
     align-items: center;
 }
 #project-section{
     position:relative;
 }
-
 
 #projects{
     padding-top: 16vh;
@@ -47,18 +70,18 @@ body{
     padding-bottom: 16vh;
     display: flex;
     flex-direction:row;
-/*    flex-wrap:wrap;*/
     justify-content:space-between;
     align-items:space-between; 
     float:left;
-/*    width: 100%;*/
-    height:500px;
+    height:calc(70vw*2/3);
 }
 
 .project-card{
-    width:700px;
+    width:70vw;
     position: relative;
-    margin-right:100px;
+    margin-right:5vw;
+    float: left;
+    overflow: hidden;
 
 }
 .page-header{
@@ -66,10 +89,11 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     width:90%;
+    min-height: 200px;
 }
 #top{
-    padding-top:30%;
-    padding-bottom: 20%;
+    padding-top:30vh;
+    padding-bottom: 20vh;
     padding-left: 15%;
     display:inline;
 }
@@ -88,8 +112,8 @@ body{
 }
 .services{
     position:absolute;
-    bottom:5%;
-    padding-left:2vw;
+    bottom:7%;
+    padding-left:5%;
     width:80%;
     
 }
@@ -105,7 +129,7 @@ body{
     position: relative;
 }
 #about{
-    padding-bottom: 16vh;
+    padding-bottom: 32vh;
     padding-top: 16vh;
     padding-left: 15%;
     width:60%;
@@ -117,7 +141,7 @@ body{
     margin:0;
 }
 .text{
-    padding-left:2vw;
+    padding-left:5%;
 }
 #social a{
     color:inherit;
@@ -127,13 +151,47 @@ body{
     color:dodgerblue;
 }
 .one{
-    background-color:pink;
+    background-color:#fefbed;
 }
+.project-card-img{
+    width:auto;
+    left:unset;
+    right:5%;
+    height: 120%;
+    transform: scale(.95,.95);
+    position: absolute;
+    bottom: -40%;
+}
+.project-card-noun{
+    width:auto;
+    left:unset;
+    right:0%;
+    height: 200%;
+    transform: scale(.95,.95);
+    position: absolute;
+    bottom: -35%;
+}
+.project-card-dumpling{
+    width:auto;
+    left:unset;
+    right:-20%;
+    height: 80%;
+    transform: scale(.95,.95);
+    position: absolute;
+    bottom: 8%;
+}
+.project-card a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
 .two{
-    background-color:blue;
+    background-color:#FFF4EA;
 }
 .three{
-    background-color: aqua;
+    background-color: #265E6D;
 }
 .four{
     background-color: darkslateblue;
@@ -142,17 +200,27 @@ body{
 .project-page{
     display: block;
     height:100%;
-    width:80%;
+    width:95%;
     padding-left: 7vw;
-    
 }
 
 .project-feature-image{
-/*    margin-top:10px;*/
     padding-top:50%;
     margin: 40px 0;
     background-size: 100%;
     width:100%;
+}
+.project-inline-image{
+    background-size: 100%;
+    padding-top:80%;
+    margin: 40px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+}
+.caption{
+    font-style: italic;
+    opacity: 50%;
 }
 .project-details{
     margin: 24px 0;
@@ -163,7 +231,17 @@ body{
     float:left;
     padding-top: 0;
     display: inline-block;
-    width:40%;
+    width:25%;
+    font-size:24px;
+}
+.project-text-content-subhead{
+    font-size:24px;
+    font-weight:500;
+}
+.blockquote{
+    font-size:30px;
+    font-weight: 400;
+    opacity:50%;
 }
 .project-body-section{
     margin: 40px 0px;
@@ -181,10 +259,13 @@ body{
     font-weight: 800;
 }
 .project-text{
-        margin-top:10px;
+    margin-top:10px;
     height:50px;
 }
 @media only screen and (max-width: 640px){
+    h3{
+        font-size: 22px;
+    }
     .project-text-body{
         width: 100%;
         margin-bottom: 0;
@@ -197,7 +278,6 @@ body{
         padding-left: 8%;
         display: flex;
         flex-direction:column;
-        width:84%;
         height: auto;
     }
     .project-card{
@@ -212,15 +292,28 @@ body{
         text-align: left;
         color: #bfbfbf;
         margin-left: 8%;
-        margin-top: -30px;
+        margin-top: -100px;
         left: 0px;
-/*        top: calc(16vh + 5px);*/
     }
-    #about{
+    #top, #about, #projects{
         padding-left: 8%;
-        width:80%;
-
+        width:84%;
+        padding-bottom: 8vh;
+        padding-top:8vh;
+        
     }
-    
-    
+    body{
+        padding-top:8vh;
+        padding-bottom: 8vh;
+    }
+    .project-card .text{
+        top:20%;
+        line-height: 1.5;
+        width:90%;
+    }
+    .project-card img{
+        top: 35%;
+        left: 10%;
+        width: auto;
+    }
 }

@@ -200,7 +200,7 @@ body{
 .project-page{
     display: block;
     height:100%;
-    width:95%;
+    width:90%;
     padding-left: 7vw;
 }
 
@@ -215,12 +215,12 @@ body{
     padding-top:80%;
     margin: 40px 0;
     background-repeat: no-repeat;
-    background-position: center;
     width:100%;
 }
 .caption{
     font-style: italic;
     opacity: 50%;
+    text-align: center;
 }
 .project-details{
     margin: 24px 0;
@@ -231,12 +231,15 @@ body{
     float:left;
     padding-top: 0;
     display: inline-block;
-    width:25%;
+    width:30%;
+}
+.project-text-subhead h3{
     font-size:24px;
 }
 .project-text-content-subhead{
     font-size:24px;
     font-weight:500;
+    line-height: 3em;
 }
 .blockquote{
     font-size:30px;

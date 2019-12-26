@@ -104,10 +104,17 @@ li{
 .affix.fixed {
     position: fixed;
     top: 0;
+    
+}
+.affix.fixed .section-title{
+    opacity: 0;
 }
 
 .affix.set {
     position: absolute;
+}
+.affix.set .section-title{
+    opacity: 1;
 }
 #navbar{
 	height: 60px;
@@ -146,24 +153,38 @@ body{
 }
 #project-section{
     position:relative;
+/*    overflow-x: scroll;*/
     overflow-y: hidden;
 }
 
 #projects{
-    padding-top: 16vh;
+/*    overflow-x: scroll;*/
+    overflow-y: hidden;
+    padding-top: calc((100vh - 80vh)/ 2);
     position: relative;
     padding-left: 15%;
     padding-bottom: 16vh;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction:row;
     justify-content:space-between;
     align-items:space-between; 
     float:left;
-    height:calc(70vw*2/3);
+   
+    
+/*
+    -webkit-transform: 'translate3d(-' + "20" + 'px,0,0)';
+    -moz-transform: 'translate3d(-' + "20" + 'px,0,0)';
+    -ms-transform: 'translate3d(-' + "20" + 'px,0,0)';
+    -o-transform: 'translate3d(-' + "20" + 'px,0,0)';
+*/
+/*    transform: translate3d(-20px,0,0);*/
 }
 
 .project-card{
     width:70vw;
+    height:80vh;
+    min-height: 500px;
     position: relative;
     margin-right:5vw;
     float: left;
@@ -503,4 +524,8 @@ body{
     .nav-link {
         margin-top:0;
     }
+}
+#fakediv {
+    height:calc(calc(70vw*2/3) + 32vh);
+    width: 100vw;
 }

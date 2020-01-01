@@ -189,7 +189,25 @@ body{
     margin-right:5vw;
     float: left;
     overflow: hidden;
+    -webkit-border-radius: 4px;
+    border-radius: 6px;
+    
+    
+     -webkit-transition: transform 850ms 0s cubic-bezier(.165, .84, .19, .95), box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95);
+    -o-transition: transform 850ms 0s cubic-bezier(.165, .84, .19, .95), box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95);
+    -webkit-transition: -webkit-transform 850ms 0s cubic-bezier(.165, .84, .19, .95), -webkit-box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95);
+    transition: -webkit-transform 850ms 0s cubic-bezier(.165, .84, .19, .95), -webkit-box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95);
+    transition: transform 850ms 0s cubic-bezier(.165, .84, .19, .95), box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95);
+    transition: transform 850ms 0s cubic-bezier(.165, .84, .19, .95), box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95), -webkit-transform 850ms 0s cubic-bezier(.165, .84, .19, .95), -webkit-box-shadow 850ms 0s cubic-bezier(.165, .84, .19, .95)
 
+
+}
+.project-card:hover{
+    -webkit-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+    -webkit-box-shadow: 0 25px 40px -10px rgba(0, 24, 40, .25);
+    box-shadow: 0 25px 40px -10px rgba(0, 24, 40, .25);
 }
 .project-title h1{
     margin:0;

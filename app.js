@@ -10,7 +10,7 @@ $(document).ready(function(){
     
     $(window).scroll(function() {
         var vScroll = $(window).scrollTop();
-        if ($(this).scrollTop() >= 50) {
+    if ($(this).scrollTop() >= 50) {
             $('.return-to-top').fadeIn(200); 
         } else {
             $('.return-to-top').fadeOut(200);
@@ -21,6 +21,10 @@ $(document).ready(function(){
             scrollTop : 0 
         }, 500);
     });
+    
+    
+    
+    
     
     function sizeProjects(){
         if (639 >= $(window).width()){

@@ -3,7 +3,7 @@
     --link-color: #0086f2;
     --text-color:#000000;
     --accent-color: #0086f2;
-    --secondary-font: 'Open Sans';
+    --secondary-font: 'Karla';
     --primary-font: 'Karla';
 }
 *{
@@ -17,9 +17,6 @@ p{
 
 b{
     font-weight: 700;
-}
-a:visited{
-    color:inherit;
 }
 a{
     text-decoration: none;
@@ -56,6 +53,9 @@ h4{
 /*      box-shadow: inset 0 -55px 0 0 var(--link-color);*/
 /*      color: white;*/
 }
+.link:visited{
+    color:var(--link-color);
+}
 .indent{
     padding-left: 60px;
 }
@@ -74,8 +74,8 @@ h4{
     margin-top:8vh;
 	line-height: 60px;
 }
-.arrow-link,.center-link:visited {
-    color:inherit;
+.arrow-link>a:visited,.center-link>a:visited, .arrow-link:visited{
+    color:var(--text-color);
 }
 .arrow-link.left{
     margin-left: -26px;
@@ -527,7 +527,19 @@ body{
 .project-page-full .project-text-body{
     width:100%
 }
-.project-page-full p,.project-text-content-subhead,.blockquote,ol,ul,.project-text-subhead,h4,.divider,.wrap-text,.contained-image,.pre-footer,.page-header{
+.project-page-full p, 
+.project-page-full .project-text-content-subhead,
+.project-page-full .blockquote,
+.project-page-full ol,
+.project-page-full ul,
+.project-page-full .project-text-subhead,
+.project-page-full h4,
+.project-page-full .divider,
+.project-page-full .wrap-text,
+.project-page-full .contained-image,
+.project-page-full .pre-footer,
+.project-page-full .page-header,
+.project-page-full .overline{
     margin-left:auto;
     max-width: 600px;
     margin-right:auto;

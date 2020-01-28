@@ -66,7 +66,6 @@ h4{
 }
 
 .arrow-link,.center-link {
-/*    color: blue;*/
     -webkit-transition: all .15s ease-in-out;
     background-color: transparent;
     text-decoration: none;
@@ -82,7 +81,6 @@ h4{
 }
 .arrow-link.right{
     margin-right: -26px;
-    
     text-align: right;
 }
 
@@ -104,19 +102,7 @@ h4{
       -webkit-transition: all .15s ease-in-out;
 
 }
-/*
-.arrow-link.right::before {
-      position: relative;
-      bottom: 0.2ex;
-      content: "\2192";
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transition: all .15s ease-in-out;
-
-}
-*/
 .page-header .arrow-link::before {
-/*    opacity: 0;*/
     margin-right: -16px;
 }
 
@@ -337,6 +323,7 @@ body{
     margin:0;
     line-height: 1.5;
 }
+
 .project-card .text{
     position:absolute;
     top:35%;
@@ -370,6 +357,9 @@ body{
     text-transform: uppercase;
     letter-spacing: .1em;
     
+}
+#social a{
+    padding-right: 25px;
 }
 #about-section{
     position: relative;

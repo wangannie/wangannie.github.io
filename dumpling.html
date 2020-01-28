@@ -2,20 +2,25 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
       <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <title>Dumpling</title>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <title>Annie Wang | Dumpling</title>
   </head>
   <body>
-      <div class="project-page">
+      <div class="project-page-full">
           <div class="page-header">
-              <a href="/" class="nav-link">&#8592 Back to home</a>
+              <a href="/" class="arrow-link left">Back to home</a>
               <div class="project-info">
+                  <div class="overline">Case Study - 2018</div>
                   <div class="project-title"><h1>Dumpling</h1></div>
                     <div class="project-right-info">
-                        <div class="project-tagline">Building smart spending habits.</div>
+                        <div class="project-tagline">The UX of smart spending habits.</div>
+<!--
                         <div class="project-details">
                                 <li><span class="project-detail-head">Date: </span>June - August 2018</li>
                                 <li><span class="project-detail-head">Role: </span>Visual Designer, UI/UX Designer, UX Researcher</li>
@@ -23,203 +28,389 @@
                                 <li><span class="project-detail-head">Skills: </span>UI/UX, User Research, Visual Design</li>
                                 <li><span class="project-detail-head">Tools: </span>Sketch, InVision, Adobe Illustrator, Adobe Photoshop, Whimsical</li>
                         </div>
+-->
                     </div>
               </div>
           </div>
+      </div>
+      
             <div class="project-feature-image" style="background-image: url('assets/mock%20up%20slides.png'); padding-top:39%;"></div>
+      <div class="project-page-full">
           
-            <div class = "project-body-section">
-                <div class="project-text-subhead"><h3>Overview</h3></div>
+            <div class = "project-body-section" id="overview">
+                <div class="project-text-subhead">
+                    <div class="overline">Overview</div>
+                    <h3>About the project</h3>
+                </div>
                 <div class="project-text-body">
-                    <p>The Zero to Sixty Fellowship was created and supported by Vora Ventures. Each year, a team of 6 high school students is selected and challenged to build and launch a technology company in 10 weeks, culminating in a pitch to investors, VC firms, and Fortune 500 executives.</p>
+                    <p>Each year, a team of 6 high school students is selected and challenged to build and launch a technology company in 10 weeks, culminating in a pitch to investors, VC firms, and Fortune 500 executives. The Zero to Sixty Fellowship was created and supported by Vora Ventures based in Cincinnati, Ohio.</p>
+                    <p><b>The team:</b> Haley Dues (Product Manager), Megan Cui  (Front-end), Jonathon Mangan (Front-end), Nicholas Reichert (Front-end), Torey Hilbert (Back-end)<br><br>
+                    <b>My role: </b>Product Design & Strategy
+                    <br><br>
+                    <b>Responsibilities: </b>Conducting user research, developing surveys, conducting interviews, establishing the strategic direction, designing and iterating on prototypes, and completing the final visual design.
+                    <br><br>
+                    <b>Timeline: </b>9 weeks, June - August 2018
+                    <br><br>
+                    <b>Tools:</b> Sketch, InVision, Adobe Illustrator
+                    </p>
                     </div>
             </div>
           
-            <div class = "project-body-section">
-                <div class="project-text-subhead"><h3>I. Research</h3></div>
-                <div class="project-text-body">
-                    <p>First, we had to understand what students thought about their spending. Based on online research and the interview and survey responses we gathered, I created a persona to guide my design decisions.</p>
-                <div class="inline-image">
-                        <img src='assets/Dumpling/Persona.png'>
+            <div class = "project-body-section" id="research">
+                <div class="project-text-subhead">
+                    <div class="overline">Defining the problem</div>
+                    <h3>What problem are we trying to solve?</h3>
                 </div>
-
-                <div class="project-text-content-subhead">Competitor Analysis</div>
-                <p>It seemed like there were plenty of personal finance apps in the market. Why weren’t they working?</p>
+                <div class="project-text-body">
+                    <div class="blockquote">Many students entering financial independence feel anxious about managing their money need to build smart spending habits but lack knowledge, experience, and accountability on effective spending.</div>
+                </div>  
+          </div>           
+        
+          <div class = "project-body-section" id="research">
+                <div class="project-text-subhead">
+                    <div class="overline">Understanding our users</div>
+                    <h3>Who are we solving the problem for?</h3>
+                </div>
+                <div class="project-text-body">  
+                    <p>First, we had to understand what students thought about their spending. As a team, we reflected on our own pain points and concerns about our financial habits. We spent the first week conducting extensive online research. I worked with our PM to draft surveys and develop phone interview questions. I summarized the insights from the interviews and survey responses and created a persona to guide my design decisions.</p>
+                <div class="inline-image">
+                        <img class="drop-shadow"src='assets/Dumpling/Persona.png'>
+                </div>
+                    
+              </div>
+          </div>
+             <div class = "project-body-section" id="overview">
+                <div class="project-text-subhead">
+                    <div class="overline">Competitor Analysis</div>
+                    <h3>How do others attempt to solve this problem?</h3>
+                </div>
+                <div class="project-text-body">
+                <p>It seemed like there were plenty of personal finance apps in the market. Why weren’t they working? We asked ourselves what we needed, researched the market to find parallels, and looked at competitors to see what they lacked.</p>
                     
                 <p><i>Disclaimer: the features highlighted in my analysis are only up to date as of the time of this project (Summer 2018). Recent app updates that resolve the issues I discuss are not reflected.</i></p>
                 
-                <h4>1. Mint: "All-in-one finances"</h4>
-                    <p>Since Mint was created in 2006, the platform has grown to have over 20 million users. However, we also found that only 8% of their users are young adults, and that 59% of users stop using Mint after a month of signing up. Why was Mint struggling to capture and retain the attention of young spenders?</p>
+                <div class="project-text-content-subhead">1. Mint: "All-in-one finances"</div>
+                    <p>Since Mint was created in 2006, the platform has grown to have over 20 million users. However, we also found that only 8% of their users are young adults, and 59% stop using Mint after a month of signing up. Why was Mint struggling to capture and retain the attention of young spenders?</p>
                 <div class="inline-image">
-                        <img src='assets/Dumpling/mint.png'>
-                        <div class="caption">Developing and testing the spending score algorithm.</div>
+                        <img src='assets/Dumpling/Mint-Transparent.png'>
                 </div>
-                    <p>Mint advertises itself as an “all-in-one money management app” and is certainly feature-packed, but many of those features would not be applicable to full-time students without stable salaried jobs.</p>
-                    <p>In my testing, Mint was so full of negative red messages and warnings — I understood why so many young users abandoned the app so quickly. So at the opposite end of the spectrum, I examined Joy.</p>
-                <h4>2. Joy: “spend happier”</h4>
-                    Joy’s pastel aesthetic and claims to help users “spend happier” seemed to appeal to a younger college-age audience.
+                    
+                <div class="project-text-content-subhead">2. Joy: “spend happier”</div>
+                    <p>Joy’s pastel aesthetic and claims to help users “spend happier” seemed to appeal to a younger college-age audience.</p>
                     <div class="inline-image">
-                        <img src='assets/Dumpling/Joy.png'>
+                        <img src='assets/Dumpling/Joy-Transparent.png'>
                     </div>
                     <p>In its efforts to encourage “happier spending”, the app was focused on binary ratings for each spend: a green smiley face or a red frown. While it was an exciting unique approach, rating my spending was never simply happy or sad. How would I categorize an impulsive and financially irresponsible (yet delicious) burger outing I joined when I had packed a lunch? What about filling a prescription? Buying fertilizer for my house plants? Joy oversimplified the rating system as most of my transactions could not simply be labeled as happy or sad, and I struggled to see how this style of categorization would improve my approach toward my spending.</p>
                     
                     <div class="inline-image">
-                        <img src="assets/Dumpling/comp%20analysis%20new.png">
+                        <img class ="drop-shadow" src="assets/Dumpling/comp-analysis.png">
                         <div class="caption">Comparing some general features of a few other popular personal finance apps that we tested.</div>
                     </div>
                     
                     <p>But were there any apps I could look examine that effectively helped people build habits?</p>
                     
-                    <div class="project-text-content-subhead">Analogous Inspiration</div>
-                    
-                    <h4 style="margin-top:0;">Nike Run Club: Effective social accountability</h4>
+                    <div class="project-text-content-subhead">Analogous Inspiration: Nike Run Club</div>
                     <p>I’ve been using NRC for several years. I knew it had been very effective in helping me improve my lifestyle, but I wanted to understand why.</p>
                     <div class="inline-image">
-                        <img src="assets/Dumpling/NRC.png">
+                        <img src="assets/Dumpling/NRC1.png">
                     </div>
                     
-                    <p>After I started completing Global Challenges, I dragged several friends to sign up for the app so we could create our own custom challenges. Every time the app alerted me that a friend started a run, I felt more compelled to get off the couch myself. The challenges channeled our competitive spirit and brought out some snarky trash-talk that pushed us to run more.</p>
+                    <p>After I started completing Global Challenges, I got several friends to join the app so we could create custom challenges. Every time the app alerted me that a friend started a run, I felt more compelled to get off the couch myself. The challenges channeled our competitive spirit and brought out some snarky trash-talk that pushed us to run more.</p>
+                    <p>Additionally, according to <a href="https://medium.com/the-mission/the-accountability-effect-a-simple-way-to-achieve-your-goals-and-boost-your-performance-8a07c76ef53a">a study on accountability</a> by the American Society of Training and Development (ASTD), individuals who have committed to others that they will complete a goal have a 65% chance of success, which can increase to a <b>95% chance of success if they have “specific accountability appointments"</b> to check in with someone on their progress.</p>
                     <br/>
                     <div class="project-text-content-subhead">Competitor Analysis Takeaways:</div>
-
                     <ul>
-                        <li>Do use some competitive element for motivation. Even tiny badges offer a sense of accomplishment, and competing with friends can be positive peer pressure.</li>
-                        <li>Don’t bombard users with negative feedback without providing any feasible solutions.</li>
-                        <li>Do consider that people have different values and priorities regarding our spending which should not be neglected.</li>
-                        <li>Don’t lose young adult audiences with overwhelming and hyperspecific long-term goals.</li>
-                        <li>Do only share high-level stats with friends and keep sensitive details hidden from profiles, especially regarding personal finances.</li>
+                        <li><b>Do</b> use some competitive element for motivation. Even tiny badges offer a sense of accomplishment, and competing with friends can be positive peer pressure.</li>
+                        <li><b>Don’t</b> bombard users with negative feedback without providing any feasible solutions.</li>
+                        <li><b>Do</b> consider that people have different values and priorities regarding our spending which should not be neglected.</li>
+                        <li><b>Don’t</b> lose young adult audiences with overwhelming and hyperspecific long-term goals.</li>
+                        <li><b>Do</b> only share high-level stats with friends and keep sensitive details hidden from profiles, especially regarding personal finances.</li>
                     </ul>
-                    <p>We looked at our own lives and wondered why we didn’t use these finance apps. We asked ourselves what we needed, researched the market to find parallels, and looked at competitors to see what they were distinctly lacking.</p>
                 </div>  
           </div>
-          <div class = "project-body-section">
-              <div class="project-text-subhead"><h3>II. Defining the Problem</h3></div>
-                        <div class="project-text-body">
-                            <div class="blockquote">Students entering financial independence who feel anxious about managing their money need to build smart and responsible spending habits but lack knowledge, experience, and accountability on how to spend effectively.</div></div>
+          <div class = "project-body-section" id="problem">
+              <div class="project-text-subhead">
+                  <div class="overline">Reframing the Problem</div>
+                <h3>Defining the core functionality</h3>
+            </div>
+                <div class="project-text-body">
+                    <p>We narrowed our problem statement into two "How Might We" statements:</p>
+                    <div class="project-text-content-subhead">Case 1</div>
+                    <p> 
+                        <b>Hypothesis: </b>How might we teach users what smart spending looks like?<br><br>
+                        <b>Claim: </b>Teach users how to think about spending by providing feedback each time the user spends money.
+                    </p>
+                    
+                    <div class="project-text-content-subhead">Case 2</div>
+                    <p> 
+                        <b>Hypothesis: </b>How might we help users stay accountable for making responsible spending decisions?<br><br>
+                        <b>Claim: </b>Help users leverage their social networks to use social accountability to help each other to spend smarter.
+                    </p>
+              </div>
             </div>
             <div class = "project-body-section">
-                <div class="project-text-subhead"><h3>III. Developing a Solution</h3></div>
-                <div class="project-text-body"><p>I’ll focus on two of our core features: Spending Score and social features.</p>
-                    <div class="project-text-content-subhead">Spending Score</div>
-                    <div class="blockquote">Problem: students don’t know what good spending looks like.<br/>
-                    Our goal: to help students spend smarter by teaching them how to think about their spending.</div>
-                    <p>We decided to assign each purchase a Spending Score out of 100. Similar to a credit score, a Spending Score could provide an easy snapshot of one’s spending effectiveness. For example, a Spending Score of 78 could mean that 78 of every 100 dollars is well spent. A numerical rating would also help students visualize improvement over time.</p>
+            <div class="project-text-subhead">
+                <div class="overline">Early Designs</div>
+                <h3>Wireframing</h3>
+            </div>
+                <div class="project-text-body">
+                    <div class="inline-image">
+                            <img src="assets/Dumpling/mid-fi.png">
+                            <div class="caption">Some mid fidelity wireframes I created using <a href="http://whimsical.com/" class="link">Whimsical</a>.</div>
+                    </div>
+                </div>
+            </div>
+            <div class = "project-body-section">
+                <div class="project-text-subhead">
+                    <div class="overline">Breaking Down Case 1</div>
+                    <h3>How might we teach users what smart spending looks like?</h3>
+                </div>
+                <div class="project-text-body">
+                    <div class="project-text-content-subhead">Developing the Spending Score Algorithm</div>
+                    <p>Our goal was to assign each purchase a Spending Score out of 100. Similar to a credit score, a Spending Score could provide an easy snapshot of one’s spending effectiveness. For example, a Spending Score of 78 could mean that 78 of every 100 dollars is well spent. A numerical rating would also help students visualize improvement over time.</p>
                     <p>To build the Spending Score algorithm, we decided to ask users to complete a “Check-in” after each purchase. By prompting students to answer a short set of questions reflecting upon each purchase, we hoped to train students to ask themselves important questions before spending their money, thus teaching them how to think about spending.</p>
-                    <p>But what exactly would a Check-in entail? What factors do we and should we consider when deciding whether to make a purchase?</p>
+                    <p>But what exactly would a check-in entail? What factors determine if a spend is 'smart'? What should students consider when deciding whether to make a purchase?</p>
                     <p>We interviewed several 17–22-year-old students to share a few recent purchases and explain their thought processes before spending, as well as reflecting on how satisfied they were with each spend.</p>
                     
                     <div class="inline-image">
-                        <img src="assets/Dumpling/check-in%20research.png">
-                        <div class="caption">What do you ask yourself before you make a purchase?</div>
+                        <img class="drop-shadow" src="assets/Dumpling/Questions-noshadow.png">
+                        <div class="caption">Some interview responses to "What do you ask yourself before you make a purchase?"</div>
                     </div>
-                    <p>The questions we gathered confirmed that our thought processes around purchase decisions are far more complex than any binary rating. But how could we capture these considerations in a check-in process that was short enough to complete for every purchase, yet not oversimplified like Joy?</p>
+                    <p>This research confirmed that users' thought processes around purchase decisions are far more complex than any binary rating. But how could we capture these considerations in a check-in process that was short enough to quickly complete for every purchase, yet not oversimplified like Joy?</p>
                     
-                    <p>First of all, we had to recognize that <b>questions would vary significantly by category</b>: while asking how valuable a purchase would be in the long term could be an important consideration when buying a toaster, it would not be applicable for evaluating a restaurant meal.</p>
+                
                     
-                    <p>After extensive testing and dozens of iterations, we decided that ultimately how ‘smart’ a spend was all came down to 5 main factors:</p>
+                    <p>After pouring through the massive bank of questions we gathered from our interviews, we analyzed the trends and determined that ultimately how ‘smart’ a spend is comes to 5 main factors:</p>
                     
                     <ol>
                         <li>Did you need it?</li>
                         <li>How much did you want it/was it an impulsive purchase?</li>
                         <li>Was it a good value?</li>
-                        <li>Can you afford it?</li>
-                        <li>What is the short-term impact on your financial goals?</li>
+                        <li>Could you afford it?</li>
+                        <li>How does it impact your long-term financial goals?</li>
                     </ol>
                     
-                    <p>But we had to remember that <b>different people have different values toward spending</b>: some never purchase anything without at least 3 weeks of research and agony, while others spend more freely and are equally satisfied with their spending. To understand these factors, we had to weigh each Check-in question differently based upon a set of questions in the onboarding process:</p>
-                    
+                    <div class="project-text-content-subhead">User Testing - Additional Considerations</div>
+                    <p>We put tested our questions by evaluating dozens of bank transactions on the 5 factors. This testing revealed two additional considerations:</p>
                     <ol>
+                    <li>
+                    <div class="wrap-text">
+                        <div class="inline-image">
+                            <img src="assets/Dumpling/Checkin_Question_Variations.png">
+                        </div>
+                        <p><b>Questions vary significantly by category.</b> Rating the long-term value of a purchase could be relevant when buying a blender, but it would seem trivial for a restaurant meal. <br><br>
+                        How this changed our product: I decided to keep the 5 core factors consistent but develop customize the wording for questions in each category.
+                        </p>
+                    </div>
+                        </li>
+                        <li>
+                    <p><b>People have different values toward spending.</b> Some people never purchase anything without at least weeks of research and deal hunting, while others spend more freely but are equally satisfied with their spending. To account for this variation, we would have to understand the users's unique values toward spending to adjust the weights of each check-in question. </p>
+                        <ul>
                         <li>What is your goal minimum amount you aim to keep in your bank account at all times?</li>
                         <li>When making a purchase, how important is the need you have for an item? (1–5)</li>
                         <li>When making a purchase, how much do you take into consideration how long you have been looking for a similar item? (1–5)</li>
                         <li>If you go into a purchase with an amount you are willing to spend on the item, how much do you take that amount into consideration? (1–5)</li>
-                    </ol>
+                    </ul>
+                    </li>
                     
-                    <p>With that, our backend developer constructed an algorithm to score each purchase and used exponential moving averaging to calculate an overall spending score that would update with each new purchase.</p>
+                    </ol>
+                            
+                    <p>With that, our backend developer Torey developed an algorithm to score each purchase and used exponential moving averaging to calculate an overall spending score that would update with each new purchase.</p>
                     
                     <div class="inline-image">
-                        <img src="assets/Dumpling/spending%20score%20testing.png">
+                        <img src="assets/Dumpling/testing-spending-score.png">
                         <div class="caption">Developing and testing the spending score algorithm.</div>
                     </div>
-                    <p>We designed the check-in flow to be short and simple. It needed to be concise so that users could quickly click through it while waiting for a class to start, riding a bus, or right before going to bed. Questions were designed to be short so that eventually rather than using check-in as a reflection after the fact, students could easily <b>internalize the questions and ask themselves before spending money.</b></p>
+                    
+                    
+                    
+                    <div class="project-text-content-subhead">Designing the check-in form</div>
+                    
                     <div class="inline-image">
-                        <img src="assets/Dumpling/Checkins%20combined.png">
-                        <div class="caption">Final check-in modal designs for grocery, apparel, and food & drink purchases.</div>
+                        <img src="assets/Dumpling/Check-in_Early_Breakdown.png">
                     </div>
-                    <br/>
-                    <p>But even if we had a working algorithm, we had to keep students using the app, which brings me to our secondary focus.</p>
-                    
-                    <div class="project-text-content-subhead">Social Features</div>
-                    <div class="blockquote">Problem: students struggle to hold themselves accountable for making responsible spending decisions.<br/>Our goal: to help students help each other to spend smarter.</div>
-                    <p>According to <a href="https://medium.com/the-mission/the-accountability-effect-a-simple-way-to-achieve-your-goals-and-boost-your-performance-8a07c76ef53a" class="link">a study on accountability</a> by the American Society of Training and Development (ASTD), individuals who have committed to others that they will complete a goal have a 65% chance of success, which can increase to a <b>95% chance of success if they have “specific accountability appointments”</b> to check in with someone on their progress.</p>
-                    
-                    <p>With this, we integrated three main social features:</p>
-                    <ol>
-                        <li>Challenges: create challenges to compete against friends</li>
-                        <li>Laderboard: sparking some competitive trash-talking spirit</li>
-                        <li>Activity Feed: inspired by apps like Venmo and Spotify (and our generation’s obsession with sharing and keeping up with others’ actions), we added an activity feed for high-level updates that protect sensitive details.</li>
-                    </ol>
                     <div class="inline-image">
-                        <img src="assets/Dumpling/Challenges%20white%20board.jpeg">
+                        <img src="assets/Dumpling/Check-in-Final-Breakdown.png">
+                    </div>
+                    <div class="inline-image">
+                        <img src="assets/Dumpling/checkin.gif">
+                    </div>
+                    <p>My primary design goal was to keep the check-in flow should be <b>short and simple</b> so that a user can easily fit the habit of completing check-ins into their day—before a lecture starts, riding the bus, or right before bed. 
+
+                    This focus on habit-building contributed to our broader goal that over time students would internalize the questions and <b>ask themselves <i>before</i> spending</b> money rather than only considering these things after the fact.
+
+                    </p>
+                    
+          </div>
+                
+                <div class = "project-body-section" id="solution">
+                <div class="project-text-subhead">
+                    <div class="overline">Breaking Down Case 2</div>
+                    <h3>How might we help users stay accountable for making responsible spending decisions?</h3>
+                </div>
+                <div class="project-text-body">
+                    <p>We broke this question into three main social features: Activity Feed, Challenges, and Leaderboard.</p>
+                    <div class="project-text-content-subhead">Designing the Activity Feed</div>
+                    <h4>The "Money Taboo"</h4>
+                    <p>One of our major concerns about building a social finance app is that people tend to avoid talking about money. Just like sex, politics, and religion, it's taboo to talk about money. However, many experts are saying that breaking the silence is essential to improving financial habits.</p>
+                    <div class="blockquote">"We’re discouraged from talking about money at every turn, but if you want to fix your financial situation, talking about it is necessary"<br>— Kristin Wong, <a class="link" href="https://www.nytimes.com/2018/08/28/smarter-living/how-to-talk-about-money.html">New York Times</a></div>
+                    <p>So how might we break the taboo and stimulate open, honest conversations about money?</p>
+                    <div class="wrap-text">
+                        <div class="inline-image">
+                            <img src="assets/Dumpling/InitialSurvey_Long.png">
+                        </div>
+                        <p>We were surprised to find that in our initial surveys, <b>a majority of respondents were open to sharing information about their spending with their friends</b>, as long as specific numbers were hidden. This was an encouraging start. </p>
+                        <p>
+                        We couldn't break the taboo overnight—we would have to ease users into the  openly sharing about their money with their friends. With this, I tried to <b>take advantage of familiarity in my designs</b> by emulating apps that young users are already familiar with—friend feeds in Spotify and Venmo. 
+                        </p>
+                    </div>
+
+
+                    
+                    <div class="inline-image">
+                        <img class="drop-shadow" src="assets/Dumpling/Activity_Feed.png">
+                    </div>
+                    
+                    <div class="project-text-content-subhead">Designing Challenges</div>
+                    
+                    <div class="inline-image">
+                        <img src="assets/Dumpling/challenges-whiteboard.jpeg" class="drop-shadow">
                         <div class="caption">Early drafts of different types of challenges and goals.</div>
+                    </div>
+                    <div class="inline-image">
+                        <img src="assets/Dumpling/Challenge_Early_Aligned.png">
+                    </div>
+                    <div class="inline-image">
+                        <img src="assets/Dumpling/Challenge-Final.png">
                     </div>
                 </div>
             </div>
+
         <div class = "project-body-section">
-            <div class="project-text-subhead"><h3>V. Ideating, Prototyping, and Iterating</h3></div>
+            <div class="project-text-subhead">
+                <div class="overline">Design</div>
+                <h3>Designing the Dashboard</h3>
+            </div>
             <div class="project-text-body">
+                <p>My final challenge was to tie all the spending score and social components together into a dashboard.</p>
                 <div class="inline-image">
-                        <img src="assets/Dumpling/zero%20to%20sixty%20week%202.png">
-                        <div class="caption">Some low fidelity wireframes I created using <a href="http://whimsical.com/" class="link">Whimsical</a>.</div>
-                </div>
-                
-                <div class="project-text-content-subhead">User Testing</div>
-                <div class="inline-image">
-                        <img src="assets/Dumpling/usertesting.jpeg">
-                        <div class="caption">A usability testing interview with Jonathan P, a rising sophomore at the Ohio State University.</div>
+                        <img src="assets/Dumpling/dashboard-explorations.png">
+                        <div class="caption">Early exploration and iteration with the Dashboard design.</div>
                 </div>
                 <div class="inline-image">
-                        <img src="assets/Dumpling/dashboard%20explorations.png">
-                        <div class="caption">Week 6: Layout explorations with the Dashboard Overview page.</div>
+                        <img src="assets/Dumpling/DashboardBreakdown-Transparent.png">
+                        <div class="caption">My final dashboard design after several rounds of user testing feedback.</div>
                 </div>
             </div>
         </div>
         <div class = "project-body-section">
-            <div class="project-text-subhead"><h3>VI. Final Prototypes</h3></div>
+            <div class="project-text-subhead">
+                <div class="overline">Outcome - Final Designs</div>
+            <h3>Revisiting our hypotheses</h3>
+        </div>
             <div class="project-text-body">
-                <div class="project-text-content-subhead">Dashboard</div>
-
+                <div class="project-text-content-subhead">Case 1</div>
+                <div class="blockquote">How might we teach users what smart spending looks like?</div>
                 <div class="inline-image">
-                        <img src="assets/Dumpling/Dashboard%20Breakdown.png">
-                        <div class="caption">The final dashboard overview design after several rounds of user testing feedback.</div>
+                        <img class="drop-shadow" src="assets/Dumpling/finals/1/Checkin.png">
+                </div>
+                <div class="inline-image">
+                        <img class="drop-shadow" src="assets/Dumpling/finals/1/Dashboard.png">
+                </div>
+                <div class="inline-image">
+                        <img class="drop-shadow" src="assets/Dumpling/finals/1/Activity.png">
                 </div>
                 
-                
+                <div class="project-text-content-subhead">Case 2</div>
+                <div class="blockquote">How might we help users stay accountable for making responsible spending decisions?</div>
+                <div class="inline-image">
+                        <img class="drop-shadow" src="assets/Dumpling/finals/2/Challenges.png">
+                </div>
+                <div class="inline-image">
+                        <img class="drop-shadow" src="assets/Dumpling/finals/2/Friends.png">
+                </div>
+                <div class="inline-image">
+                        <img class="drop-shadow" src="assets/Dumpling/finals/2/Leaderboard.png">
+                </div>
 
-                <div class="project-text-content-subhead">Challenges</div>
-                        <div class="inline-image"><img src="assets/Dumpling/Hifi/My%20Challenges%20Condensed.png"></div>
-                        <div class="inline-image"><img src="assets/Dumpling/Hifi/Challenge%20Details%20Condensed.png"></div>
-                <div class="project-text-content-subhead">Community</div>
-                    <div class="inline-image"><img src="assets/Dumpling/Hifi/Friends%20Condensed.png"></div>
-                    <div class="inline-image"><img src="assets/Dumpling/Hifi/Friends%20Condensed.png"></div>
-                <p>Click around the <a href="https://invis.io/TRP69KMNZXJ" class="link">final prototype on InVision</a>!</p>
+                <div class="project-text-content-subhead">Interactive Prototype</div>
+                
+                <p>Click through my final interactive prototype in <a href="https://invis.io/TRP69KMNZXJ" class="link">InVision</a>!</p>
             
             </div>
         </div>
-        <div class = "project-body-section">
-            <div class="project-text-subhead"><h3>VII. Conclusion</h3></div>
-            <div class="project-text-body">
-                <p>Due to the nature of the program, we were expected to have a functional MVP to demo in 9 weeks. Since our developers had no experience with React and would be learning on the fly, we jumped into development and unfortunately neglected the important stages of conducting user research and defining the problem.</p>
-                
-                <p>This was my first experience as a UI/UX designer, and I did not fully embrace the iterative design process until several weeks into the summer. I was so enthusiastic about using Sketch for the first time and distracted by all the beautiful examples I found on Dribbble and Pinterest, so I began working on pixel-perfect prototypes without enough rounds of iteration and user testing feedback on low-fidelity mockups. However, I was forced to realize the importance of feedback and putting screens in front of users to make sure our solution was still relevant to the problems users face.</p>
-                
-                <p>Regrets aside, this was an incredible learning experience. Through working directly with developers, I learned to compromise flourish for feasibility to finish with an MVP. And while I’d read about the iterative human-centered design process, I had never actually applied it before. Getting this opportunity to see the human-centered design process in action (and experiencing the pitfalls of neglecting the early stages) showed me how important feedback and communication are to a team’s success.</p>
-                
-                <div class="divider"><hr></div>
-                <p>Special thanks to my amazing Zero to Sixty team, as well as my mentors Anu Vora, Mahendra Vora, Mickey Mentzer, Mark Olszewski, Justin Couchot, and everyone who supported me while working on this project.</p>
+        <div class = "project-body-section" id="conclusion">
+            <div class="project-text-subhead">
+                <div class="overline">Reflections & Takeaways</div>
+                <h3>What did I learn?</h3>
             </div>
+            <div class="project-text-body">
+                
+                <h4>Copy is important, especially for a habit-building app.</h4>
+                <p>
+                    Many users responded overwhelmingly positively to A/B testing variations with more text and direct reminders of how much they were saving. Incorporating tooltips and <i>How does this work?</i> links helped users understand our algorithms. 
+                    <br><br>
+                    Previously, I tried to minimize text following minimalistic design trends, but this project taught me the value of intentionally worded and placed text. I was challenged to incorporate concise text into my visual designs while avoiding clutter.
+                </p>
+                <h4>How to choose what <i>not</i> to do. </h4>
+                <p>We had many great ideas, but I had to be very intentional deciding which features we would incorporate in the MVP and which should wait. I learned to determine which features could bring real value to the app so we wouldn't spread ourselves too thin.</p>
+                <h4>How to balance UX, business goals, and technical constraints.</h4>
+                <p>Working in a cross-functional entrepreneurial team showed me the interplay of design with other team functions. I weighed considerations of business (how could we monetize our app to convince investors that our app was worth their money?) and engineering (what is technically feasible within the timeline?) to create the best possible user experience within those constraints.</p>
+                
+                <h4>The importance of direct communication and collaboration between designers and engineers.</h4>
+                <p>I learned to fight for design details that were essential to good user experience, but to sacrifice some non-essential flourishes to ensure our engineers' time was spent on essential features.</p>
+                <h4>Streamline designer-developer handoff.</h4>
+                <p>I learned how to develop a handoff workflow that accounted for various states and edge cases, saving a lot of back and forth with the engineers.</p>
+                
+                <h4>Never rush through user research.</h4>
+                <p>I should have spent the first few weeks thoroughly researching to understand the problem, but instead, our team felt pressured to rush into development. Looking back, starting with thorough user research would've saved us time in the long run, as it might have saved us some redesigns after user testing and allowed us to start with more direction. </p>
+                
+                <h4>Don't jump into high-fidelity (and don't get distracted by Dribbble).</h4>
+                <p>I was so enthusiastic about using Sketch for the first time and distracted by all the beautiful examples I found on Dribbble that I started on pixel-perfect prototypes without enough iteration and user testing on low-fi mockups. This was a costly mistake—making design changes and iterations when we were already in high-fidelity was much more time-consuming than if I'd stayed in mid-fidelity.</p>
+                
+                <h4>Feedback and outside perspective is essential.</h4>
+                <p>I grew the most as a designer when I understood the value of seeking feedback. At first, I was convinced that nobody should look at my designs until they were done. I finally learned to overcome my fear and realize that nobody was judging me as a designer. Even a quick Slack message to a design mentor or leaning over to consult an engineer released me from analysis paralysis or opened up new avenues. </p>
+                
+                <h4>What it's like to work in a fast-paced startup.</h4>
+                <p>With only 9 weeks to come up with an idea and pitch an MVP, I learned to be scrappy and flexible, as well as how to maintain a healthy team culture within a high-stress environment.</p>
+                
+                <div class="project-text-content-subhead">What I would have done differently</div>
+                <h4>Accessibility in design can't be an afterthought.</h4>
+                <p>I completely neglected considerations about accessibility, dismissing it as non-essential to our MVP. However, as I've grown as a designer, I now know that accessibility can't be tacked on afterwards. If I were to do this project again, accessibility would've been an essential consideration from the start.</p>
+                
+                
+                <div class="project-text-content-subhead">Next Steps:</div>
+                    <ul>
+                        <li>Continue conducting user testing to confirm or challenge design decisions.</li>
+                        <li>Design MVP prototypes for every platform.</li>
+                        <li>Continue market research to test establish a strong product-market fit.</li>
+                        <li>Explore different potential user journeys to understand various user types and use cases.</li>
+                    </ul>
+                <div class="divider"><hr></div>
+                <p>After our successful pitch, we ended with a valuation of $3 million. Unfortunately, since several members of the team were leaving to start college and other pursuits, we decided not to continue pursuing the project.</p>
+                <p>Overall, the Zero to Sixty fellowship was an incredible learning experience and I'm incredibly grateful to have been selected for the 2018 cohort. Special thanks to my amazing Zero to Sixty cohort, as well as my mentors Anu Vora, Mahendra Vora, Mickey Mentzer, Mark Olszewski, Justin Couchot, and everyone who supported me while working on this project.</p>
+            </div>
+            <div class = "project-body-section">
+                <div class ="pre-footer">
+                    <div class="arrow-link left"><a href="current.html">Previous Project</a></div>
+                  <div class="center-link"><a href="/">Home</a></div>
+                  <div class="arrow-link right"><a href="hackchicagobranding.html">Next Project</a></div>
+              </div>    
+            </div>
+
         </div>
+        
       </div>
+      <!-- <div class="toc">
+          <div class="toc-item" ><a href="#overview">Overview</a></div>
+          <div class="toc-item" ><a href="#research">Research</a></div>
+          <div class="toc-item" ><a href="#problem">Problem</a></div>
+          <div class="toc-item" ><a href="#solution">Solution</a></div>
+          <div class="toc-item" ><a href="#iterating">Iterating</a></div>
+          <div class="toc-item"><a href="#final">Final Prototypes</a></div>
+          <div class="toc-item"><a href="#conclusion">Conclusions</a></div>
+      </div> -->
+      
       
     <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
     <script type="text/javascript" src="app.js" ></script>

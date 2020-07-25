@@ -1,1 +1,11 @@
-<script>window.location.replace("healthycorners://");</script>
+<script>
+const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+if (iOS) {
+  // Just use the link of your app on the AppStore and replace https:// with itms://
+  window.location.href = "itms://itunes.apple.com/us/app/google-maps-transit-food/id585027354?mt=8";
+}
+</script>
+
+
+<!-- window.location.replace("healthycorners://"); -->
